@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { UserAuth } from './components/auth/UserAuth';
 import { LogoutButton } from './components/auth/LogoutButton';
+import { VeltPresence } from '@veltdev/react';
 
 export default function Home() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -17,6 +18,7 @@ export default function Home() {
         <UserAuth />
         {isAuthenticated && <LogoutButton />}
       </div>
+      <VeltPresence />
       <header className="mb-6">
         <h1 className="text-2xl sm:text-3xl font-bold">Collaborative Emails</h1>
         <p className="text-sm sm:text-base text-gray-600">Collaborate on your emails with your team</p>
