@@ -1,7 +1,7 @@
 'use client'
 
 import { useVeltClient } from '@veltdev/react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/app/components/ui/button';
 import { LogOut } from 'lucide-react';
 
 export function LogoutButton() {
