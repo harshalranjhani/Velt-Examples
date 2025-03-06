@@ -1,9 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { UserAuth } from './components/auth/UserAuth';
-import { LogoutButton } from './components/auth/LogoutButton';
-import { ThemeSwitcher } from './components/ThemeSwitcher';
+import { UserAuth } from '@/components/auth/UserAuth';
+import { LogoutButton } from '@/components/auth/LogoutButton';
+import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { VeltPresence } from '@veltdev/react';
 
 export default function Home() {
@@ -27,7 +27,6 @@ export default function Home() {
         <h1 className="text-2xl sm:text-3xl font-bold">Collaborative Emails</h1>
         <p className="text-sm sm:text-base text-gray-600">Collaborate on your emails with your team</p>
       </header>
-      {/* Rest of your application */}
     </div>
   );
 }
